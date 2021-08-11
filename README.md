@@ -105,6 +105,7 @@ bash run/eval.sh vgg16 results/caltech256-vgg16/099.pth caltech256} {checkpoints
 # For example
 bash run/evalall.sh vgg16 results/caltech256-vgg16/ caltech101
 ```
+When all checkpoints are evaluated, a scatter diagram ```figs/evalall.jpg``` will be generated to show the evaluate loss trend.
 
 For model architecture, now we support ```vgg11,vgg13,vgg16,vgg19``` and ```resnet18, resnet34, resnet50, resnet101, resnet152```.
 
