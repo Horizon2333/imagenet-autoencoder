@@ -94,7 +94,7 @@ For evaluating single checkpoint:
 ```shell
 bash run/eval.sh {model architecture} {checkpoint path} {dataset name}
 # For example
-bash run/eval.sh vgg16 results/caltech256-vgg16/099.pth caltech256
+bash run/eval.sh vgg16 results/caltech256-vgg16/099.pth caltech101
 ```
 
 For evaluating all checkpoints under specific folder:
@@ -103,7 +103,7 @@ For evaluating all checkpoints under specific folder:
 bash run/evalall.sh {model # For example
 bash run/eval.sh vgg16 results/caltech256-vgg16/099.pth caltech256} {checkpoints path} {dataset name}
 # For example
-bash run/evalall.sh vgg16 results/caltech256-vgg16/ caltech256
+bash run/evalall.sh vgg16 results/caltech256-vgg16/ caltech101
 ```
 
 For model architecture, now we support ```vgg11,vgg13,vgg16,vgg19``` and ```resnet18, resnet34, resnet50, resnet101, resnet152```.
