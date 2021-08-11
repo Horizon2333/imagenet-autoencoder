@@ -8,6 +8,9 @@ import torch
 
 from torchvision.transforms import transforms
 
+import sys
+sys.path.append("./")
+
 import utils
 import models.builer as builder
 
