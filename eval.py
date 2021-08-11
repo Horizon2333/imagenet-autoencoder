@@ -4,6 +4,8 @@ import os
 import time
 import argparse
 
+import matplotlib.pyplot as plt
+
 import torch
 import torch.nn as nn
 
@@ -60,6 +62,7 @@ def main(args):
     if args.folder:
         best_loss = None
         best_epoch = 1
+        losses = []
         for epoch in range(args.epochs):
             print()
             print("Epoch {}".format(epoch+1))
@@ -69,6 +72,7 @@ def main(args):
             loss = do_evaluate(val_loader, model, criterion, args)
             print("Evaluate loss : {:.4f}".format(loss))
 
+            losses.append(loss)
             if best_loss:
                 if loss < best_loss:
                     best_loss = loss
@@ -77,6 +81,20 @@ def main(args):
                 best_loss = loss
         print()
         print("Best loss : {:.4f} Appears in {}".format(best_loss, best_epoch))
+
+        max_loss = max(losses)
+
+        plt.figure(figsize=(7,7))
+
+        plt.xlabel("epoch")
+        plt.ylabel("loss")
+        plt.xlim((0,args.epochs+1)) 
+        plt.ylim([0, float('%.1g' % (1.22*max_loss))])
+
+        plt.scatter(range(1, args.epochs+1), losses, s=9)
+
+        plt.savefig("figs/evalall.jpg")
+
     else:
         print('=> loading pth from {} ...'.format(args.resume))
         utils.load_dict(args.resume, model)
