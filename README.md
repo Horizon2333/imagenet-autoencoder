@@ -2,6 +2,10 @@
 
 Train VGG-like and ResNet-like auto-encoder on image dataset like ImageNet, Caltech256
 
+
+![imagenet-autoencoder/reconstruction.jpg at main · Horizon2333/imagenet-autoencoder (github.com)](https://github.com/Horizon2333/imagenet-autoencoder/blob/main/figs/reconstruction.jpg)
+
+
 1. [Project Structure](#project-structure)
 2. [Install](#install)
 3. [Data preparing](#data-preparing)
@@ -13,16 +17,16 @@ Train VGG-like and ResNet-like auto-encoder on image dataset like ImageNet, Calt
 
 ```
 $imagenet-autoencoder
-	|──figs                 # result images
-		|── *.jpg
-	|──models
-		|──builder.py       # build autoencoder models
-		|──resnet.py        # resnet-like autoencoder
-		|──vgg.py           # vgg-like autoencoder
-	|──run
-		|──eval.sh          # command to evaluate single checkpoint
-		|──evalall.sh       # command to evaluate all checkpoints in specific folder
-		|──train.sh         # command to train auto-encoder
+    |──figs                 # result images
+        |── *.jpg
+    |──models
+        |──builder.py       # build autoencoder models
+        |──resnet.py        # resnet-like autoencoder
+        |──vgg.py           # vgg-like autoencoder
+    |──run
+        |──eval.sh          # command to evaluate single checkpoint
+        |──evalall.sh       # command to evaluate all checkpoints in specific folder
+        |──train.sh         # command to train auto-encoder
     |──tools                
         |──decode.py        # decode random latent code to images
         |──encode.py        # encode single image to latent code
