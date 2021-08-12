@@ -149,7 +149,7 @@ The decoded results will be save as ```figs/generation.jpg```
 
 |  Dataset   | VGG11 | VGG13 | VGG16 | VGG19 | ResNet18 | ResNet34 | ResNet50 | ResNet101 | ResNet152 |
 | :--------: | :---: | :---: | :---: | :---: | :------: | :------: | :------: | :-------: | --------: |
-| Caltech256 |       |       |       |       |          |          |          |           |           |
+| Caltech256 |   [link](https://drive.google.com/file/d/1gebnzAnFDpT9mmzr2dDVZ39FxqZHSuD4/view?usp=sharing)    |       |       |       |          |          |          |           |           |
 |  ImageNet  |       |       |       |       |          |          |          |           |           |
 
  Checkpoint will coming soon ...
