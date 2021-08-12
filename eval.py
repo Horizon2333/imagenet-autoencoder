@@ -31,8 +31,9 @@ def get_args():
                         metavar='N', help='print frequency (default: 10)')
 
     parser.add_argument('--resume', type=str)
-    parser.add_argument('--folder', type=str)                                   
-    parser.add_argument('--epochs', default=20, type=int) 
+    parser.add_argument('--folder', type=str)   
+    parser.add_argument('--start_epoch', default=0, type=int)                                 
+    parser.add_argument('--epochs', default=100, type=int) 
 
     args = parser.parse_args()
 
@@ -63,7 +64,7 @@ def main(args):
         best_loss = None
         best_epoch = 1
         losses = []
-        for epoch in range(args.epochs):
+        for epoch in range(args.start_epoch, args.epochs):
             print()
             print("Epoch {}".format(epoch+1))
             resume_path = os.path.join(args.folder, "%03d.pth" % epoch)
