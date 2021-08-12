@@ -14,4 +14,5 @@ python3 -u eval.py \
     --batch-size 256 \
     --print-freq 10 \
     --folder ${FOLDER} \
+    --start_epoch 0 \
     --epochs 100
