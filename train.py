@@ -136,7 +136,7 @@ def main_worker(gpu, args):
                     'state_dict': state_dict,
                     'optimizer' : optimizer.state_dict(),
                 },
-                os.path.join(args.pth_save_fold, '{}.pth'.format(str(epoch+args.start_epoch).zfill(3)))
+                os.path.join(args.pth_save_fold, '{}.pth'.format(str(epoch).zfill(3)))
             )
             
             print(' : save pth for epoch {}'.format(epoch + 1))
