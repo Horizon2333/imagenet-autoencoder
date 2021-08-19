@@ -1,6 +1,6 @@
 # Auto-Encoder trained on ImageNet
 
-Train VGG-like and ResNet-like auto-encoder on image dataset like ImageNet, Caltech256
+Train VGG-like and ResNet-like auto-encoder on image dataset like ImageNet
 
 
 ![imagenet-autoencoder/reconstruction.jpg at main · Horizon2333/imagenet-autoencoder (github.com)](https://github.com/Horizon2333/imagenet-autoencoder/blob/main/figs/reconstruction.jpg)
@@ -150,6 +150,4 @@ The decoded results will be save as ```figs/generation.jpg```
 |  Dataset   | VGG11 | VGG13 | VGG16 | VGG19 | ResNet18 | ResNet34 | ResNet50 | ResNet101 | ResNet152 |
 | :--------: | :---: | :---: | :---: | :---: | :------: | :------: | :------: | :-------: | :--------: |
 | Caltech256 |   [link](https://drive.google.com/file/d/1gebnzAnFDpT9mmzr2dDVZ39FxqZHSuD4/view?usp=sharing)    |   [link](https://drive.google.com/file/d/1JRooEtKw2-2R_u-pswX2C8mAl_GgAlhH/view?usp=sharing)    |   [link](https://drive.google.com/file/d/12ysuL1rzIedcL_KD3VNDcZn9lGwxCWFu/view?usp=sharing)    |   [link](https://drive.google.com/file/d/1ydCY3llYJLL3asZ45-EGPUYxB-jlLVFo/view?usp=sharing)    |     [link](https://drive.google.com/file/d/1vokB8J17t34qk8qN37cVrEes06wzJzzG/view?usp=sharing)     |      [link](https://drive.google.com/file/d/1EMfNI6uAMdx-T1QmYg-UQHNWLxkaub6c/view?usp=sharing)    |     [link](https://drive.google.com/file/d/1-lA1dtP9q9ABom7c3qbMy7JYnnQvsI9H/view?usp=sharing)     |     [link](https://drive.google.com/file/d/1yNzkPhf2LAzu0mVm3ZedTObl_s-2pg1J/view?usp=sharing)      |     [link](https://drive.google.com/file/d/1HX7zaMK4ug6GjdUljG8Jqc4OvT8aLTrD/view?usp=sharing)      |
-|  ImageNet  |       |       |       |       |          |          |          |           |           |
-
- Checkpoint will coming soon ...
+|  ImageNet  |       |       |   [link](https://drive.google.com/file/d/1WwJiQ1kBcNCZ37F6PJ_0bIL0ZeU3_sV8/view?usp=sharing)    |       |          |          |          |           |           |
