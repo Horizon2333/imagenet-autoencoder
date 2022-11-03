@@ -100,8 +100,7 @@ bash run/eval.sh vgg16 results/caltech256-vgg16/099.pth caltech101
 For evaluating all checkpoints under specific folder:
 
 ```shell
-bash run/evalall.sh {model # For example
-bash run/eval.sh vgg16 results/caltech256-vgg16/099.pth caltech256} {checkpoints path} {dataset name}
+bash run/evalall.sh {model architecture} {checkpoints path} {dataset name}
 # For example
 bash run/evalall.sh vgg16 results/caltech256-vgg16/ caltech101
 ```
